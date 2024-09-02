@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 body{
     background-color: rgb(105, 106, 107);
     text-align: center;
@@ -59,29 +60,53 @@ h1{
   fill: #cec6c6;
 }
 
+
+/* main page css */
 .dashboard {
   background: url('Wether img/main.jpeg') no-repeat center center/cover;
-  /* width: 500%; */
-  height:500px;
+  height: 500px;
   padding: 20px;
   border-radius: 12px;
   position: relative;
   margin-top: 30px;
+  display: flex;
+  align-items: center;
+  color: white;
 }
-
 
 .content {
   display: flex;
-  height:460px;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 15px;
-  border-radius: 8px;
+  width: 100%;
 }
 
-.location-info {
-  color: white;
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.location-info, .current-weather {
+  text-align: left;
+  font-size: large;
+  color: #000000;
+}
+
+.forecast {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  height: 500px;
+  max-width: 35%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .forecast ul {
@@ -89,18 +114,29 @@ h1{
   padding: 0;
   margin: 0;
   color: white;
+  width: 100%;
 }
 
 .forecast ul li {
   display: flex;
   justify-content: space-between;
   padding: 4px 0;
+  max-width: 400px;
+  width: 100%;
 }
 
-.current-weather {
+.time-container {
+  margin-top: 20px;
   text-align: center;
+  width: 100%;
+}
+
+.time {
+  font-size: 18px;
   color: white;
 }
+
+
 
 .current-weather h1 {
   font-size: 50px;
@@ -111,6 +147,50 @@ h1{
   font-size: 18px;
 }
 
-.time {
-  margin-top: 10px;
+
+@media (max-width: 768px) {
+  .content {
+      flex-direction: column;
+  }
+
+  .left-side, .forecast {
+      width: 100%;
+      margin: 0;
+  }
+
+  .forecast {
+      margin-top: 20px;
+  }
+
+  .current-weather h1 {
+      font-size: 40px;
+  }
+
+  .current-weather p {
+      font-size: 16px;
+  }
 }
+
+@media (max-width: 576px) {
+  .dashboard {
+      height: auto;
+      padding: 15px;
+  }
+
+  .left-side {
+      margin-right: 0;
+  }
+
+  .forecast {
+      padding: 10px;
+  }
+
+  .current-weather h1 {
+      font-size: 30px;
+  }
+
+  .current-weather p {
+      font-size: 14px;
+  }
+}
+
