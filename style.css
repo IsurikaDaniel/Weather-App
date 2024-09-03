@@ -102,7 +102,6 @@ h1{
 } 
 .most-cloudy{
   text-align: left;
-  /* margin-top: 90px; */
   font-size:60px;
   color: hsl(0, 0%, 100%);
 }
