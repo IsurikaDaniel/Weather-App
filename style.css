@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-.body{
-    background-color: rgb(105, 106, 107);
-    text-align: center;
-    justify-items: center;
+.body {
+  background-color: rgb(105, 106, 107);
+  text-align: center;
+  justify-items: center;
 }
 
-h1{
+h1 {
   font-family: "Playfair Display", serif;
   font-size: 50px;
   color: #000000;
   margin-top: 10px;
 }
 
-h2{
-color: #000000;
-font-size: 30px;
+h2 {
+  color: #000000;
+  font-size: 30px;
 }
 
-/* Serchbar code */ 
+/* Serchbar code */
 .search-header {
   display: flex;
   align-items: center;
@@ -38,7 +38,7 @@ font-size: 30px;
   background-color: #0a0a0a;
   border: solid 0.5px #a5a0a0;
   color: #cac3c3;
-  padding: 0.7rem 2.5rem 0.7rem 1rem; 
+  padding: 0.7rem 2.5rem 0.7rem 1rem;
   border-radius: 25px;
   width: 600px;
   height: 50px;
@@ -50,7 +50,7 @@ font-size: 30px;
 
 .search-header__button {
   position: absolute;
-  right: 10px; 
+  right: 10px;
   background-color: transparent;
   border: none;
   display: flex;
@@ -96,22 +96,23 @@ font-size: 30px;
   margin-right: 20px;
 }
 
-.location-info{
+.location-info {
   text-align: left;
   font-size: 30px;
   margin-top: 10px;
   color: #000000;
 }
 
-.current-weather{
+.current-weather {
   text-align: left;
   margin-top: 100px;
-  font-size:60px;
+  font-size: 60px;
   color: hsl(0, 0%, 100%);
-} 
-.most-cloudy{
+}
+
+.most-cloudy {
   text-align: left;
-  font-size:60px;
+  font-size: 60px;
   color: hsl(0, 0%, 100%);
 }
 
@@ -168,49 +169,50 @@ font-size: 30px;
 
 @media (max-width: 700px) {
   .content {
-      flex-direction: column;
+    flex-direction: column;
   }
 
-  .left-side, .forecast {
-      width: 100%;
-      margin: 0;
+  .left-side,
+  .forecast {
+    width: 100%;
+    margin: 0;
   }
 
   .forecast {
-      margin-top: 20px;
+    margin-top: 20px;
   }
 
   .current-weather h1 {
-      font-size: 40px;
+    font-size: 40px;
   }
 
   .current-weather p {
-      font-size: 16px;
+    font-size: 16px;
   }
 }
 
 @media (max-width: 576px) {
   .dashboard {
-      height: auto;
-      padding: 15px;
+    height: auto;
+    padding: 15px;
   }
 
   .left-side {
-      margin-right: 0;
+    margin-right: 0;
   }
 
   .forecast {
-      padding: 10px;
+    padding: 10px;
   }
 
   .current-weather h1 {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .current-weather p {
-      font-size: 14px;
+    font-size: 14px;
   }
-  
+
 }
 
 .order-card {
@@ -230,13 +232,112 @@ font-size: 30px;
   margin: 20px 0;
 }
 
-.cardImg{
+.cardImg {
   height: 150px;
   width: 100px;
 }
 
-/* .order-card p{
-  color: #000000;
-  text-align: center;
-  width: 10px;
-}  */
+/* .nextMainImg{
+  height: 80%;
+  width: 100%;
+} */
+.wheatherUpdate {
+  background: url('Wether img/nextMain.jpeg') no-repeat center center/cover;
+  height: 500px;
+  padding: 20px;
+  border-radius: 12px;
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.WUpdate {
+  background-color: rgba(0, 0, 0, 0.616);
+  font-size: 20px;
+  text-align: left;
+  padding: 5px;
+  border-radius: 8px;
+  height: 480px;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  /* align-items: center; */
+}
+
+/* Input desplay */
+.wave-group {
+  position: relative;
+}
+
+.wave-group .input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid #515151;
+  background: transparent;
+}
+
+.wave-group .input:focus {
+  outline: none;
+}
+
+.wave-group .label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  display: flex;
+}
+
+.wave-group .label-char {
+  transition: 0.2s ease all;
+  transition-delay: calc(var(--index) * .05s);
+}
+
+.wave-group .input:focus~label .label-char,
+.wave-group .input:valid~label .label-char {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #5264AE;
+}
+
+.wave-group .bar {
+  position: relative;
+  display: block;
+  width: 200px;
+}
+
+.wave-group .bar:before,
+.wave-group .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #5264AE;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.wave-group .bar:before {
+  left: 50%;
+}
+
+.wave-group .bar:after {
+  right: 50%;
+}
+
+.wave-group .input:focus~.bar:before,
+.wave-group .input:focus~.bar:after {
+  width: 50%;
+}
