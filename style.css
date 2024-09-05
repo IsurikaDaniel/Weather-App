@@ -215,14 +215,20 @@ h2 {
 
 }
 
+.cardrow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .order-card {
   margin-top: 20px;
   border: 1px solid #dae2de;
   border-radius: 8px;
   color: #000000;
   padding: 20px;
-  width: 50%;
-  justify-items: center;
+  width: 100%;
+  max-width: 300px;
   text-align: center;
 }
 
@@ -233,22 +239,24 @@ h2 {
 }
 
 .cardImg {
-  height: 150px;
+  height: 200px;
   width: 100px;
 }
 
 
 .wheatherUpdate {
-  background: url('Wether img/nextMain.jpeg') no-repeat center center/cover;
-  height: 600px;
+  background: url('Wether img/Best\ HD\ Sunset\ Images\ Free\ Download.jpeg') no-repeat center center/cover;
+  height: 580px;
   padding: 20px;
   border-radius: 12px;
   position: relative;
   margin-top: 30px;
   display: flex;
-  align-items: center;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
   color: white;
 }
+
 
 .WUpdate {
   background-color: rgba(0, 0, 0, 0.616);
@@ -256,14 +264,15 @@ h2 {
   text-align: left;
   padding: 5px;
   border-radius: 8px;
-  height: 580px;
-  max-width: 100%;
+  height: 500px;
+  max-width: 80%; /* Ensure the width is constrained */
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
 }
+
 
 /* Input desplay */
 .wave-group {
