@@ -128,7 +128,6 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  /* align-items: center; */
 }
 
 .forecast ul {
@@ -252,8 +251,8 @@ h2 {
   position: relative;
   margin-top: 30px;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center; 
+  align-items: center; 
   color: white;
 }
 
@@ -265,7 +264,7 @@ h2 {
   padding: 5px;
   border-radius: 8px;
   height: 500px;
-  max-width: 80%; /* Ensure the width is constrained */
+  max-width: 80%; 
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -283,9 +282,9 @@ h2 {
   font-size: 16px;
   padding: 10px 10px 10px 5px;
   display: block;
-  width: 200px;
+  width: 250px;
   border: none;
-  border-bottom: 1px solid #515151;
+  border-bottom: 1px solid #ffffff;
   background: transparent;
 }
 
@@ -294,7 +293,7 @@ h2 {
 }
 
 .wave-group .label {
-  color: #999;
+  color: #ffffff;
   font-size: 18px;
   font-weight: normal;
   position: absolute;
@@ -313,13 +312,13 @@ h2 {
 .wave-group .input:valid~label .label-char {
   transform: translateY(-20px);
   font-size: 14px;
-  color: #5264AE;
+  color: #be9494;
 }
 
 .wave-group .bar {
   position: relative;
   display: block;
-  width: 200px;
+  width: 250px;
 }
 
 .wave-group .bar:before,
@@ -329,7 +328,7 @@ h2 {
   width: 0;
   bottom: 1px;
   position: absolute;
-  background: #5264AE;
+  background: #be9494;
   transition: 0.2s ease all;
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
