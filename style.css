@@ -120,7 +120,7 @@ h2 {
   background-color: rgba(0, 0, 0, 0.5);
   font-size: 20px;
   text-align: center;
-  padding: 5px;
+  padding: 10px;
   border-radius: 8px;
   height: 500px;
   max-width: 50%;
@@ -222,9 +222,10 @@ h2 {
 
 .order-card {
   margin-top: 20px;
-  border: 1px solid #dae2de;
-  border-radius: 8px;
+  border: 1px solid #434444;
+  border-radius: 10px;
   color: #000000;
+  background-color: #ddd8d8b0;
   padding: 20px;
   width: 100%;
   max-width: 300px;
@@ -233,7 +234,7 @@ h2 {
 
 .order-card hr {
   border: 0;
-  border-top: 2px solid #dae2de;
+  border-top: 2px solid #000000;
   margin: 20px 0;
 }
 
@@ -261,10 +262,10 @@ h2 {
   background-color: rgba(0, 0, 0, 0.616);
   font-size: 20px;
   text-align: left;
-  padding: 5px;
+  padding: 10px;
   border-radius: 8px;
-  height: 500px;
-  max-width: 80%; 
+  height: 520px;
+  max-width: 60%; 
   width: 100%;
   display: flex;
   flex-direction: column;
