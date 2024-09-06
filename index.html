@@ -16,10 +16,10 @@
 
   <h1 class="mt-5">Weather</h1>
 
-  <div class="search-header">
+  <div class="search-header container-fluid ">
     <div class="search-header__wrapper">
       <input placeholder="Search" class="search-header__input" type="text" />
-      <button class="search-header__button">
+      <button class="search-header__button" onclick="serchCuntrie()">
         <svg viewBox="0 0 18 18" height="18" width="18" class="search-header__icon">
           <path fill="#3A3A3A"
             d="M7.132 0C3.197 0 0 3.124 0 6.97c0 3.844 3.197 6.969 7.132 6.969 1.557 0 2.995-.49 4.169-1.32L16.82 18 18 16.847l-5.454-5.342a6.846 6.846 0 0 0 1.718-4.536C14.264 3.124 11.067 0 7.132 0zm0 .82c3.48 0 6.293 2.748 6.293 6.15 0 3.4-2.813 6.149-6.293 6.149S.839 10.37.839 6.969C.839 3.568 3.651.82 7.132.82z">
@@ -46,7 +46,7 @@
         </div>
       </div>
 
-      <div class="forecast">
+      <div class="forecast ">
         <ul>
           <li><span>Today</span> <span>☀️ Sunny</span><p id="date"></p></li>
           <li><span>Mon</span> <span>☀️ Sunny</span> <span>18/10/2024</span></li>
@@ -74,15 +74,15 @@
 
 
   <div class="container-fluid">
-    <div class="wheatherUpdate mt-5">
-      <div class="WUpdate">
+    <div class="wheatherUpdate mt-5 container-fluid m-lg-auto m-md-auto m-sm-auto ">
+      <div class="WUpdate container-fluid m-lg-auto m-md-auto m-sm-auto ">
 
         <div class="row mt-3">
          
             <!-- Location input desplay  -->
-          <div class="col">
+          <div class="col container-fluid m-lg-auto m-md-auto m-sm-auto ">
             <div class="wave-group">
-              <input required="" type="text" class="input">
+              <input required="" type="text" class="input" id="txtserch">
               <span class="bar"></span>
               <label class="label">
                 <span class="label-char" style="--index: 0">L</span>
@@ -104,7 +104,7 @@
          
           <div class="col">
             <div class="wave-group">
-              <input required="" type="text" class="input">
+              <input required="" type="text" class="input" id="txtserch">
               <span class="bar"></span>
               <label class="label">
                 <span class="label-char" style="--index: 0">T</span>
@@ -130,7 +130,7 @@
          
           <div class="col">
             <div class="wave-group">
-              <input required="" type="text" class="input">
+              <input required="" type="text" class="input" id="txtserch">
               <span class="bar"></span>
               <label class="label">
                 <span class="label-char" style="--index: 0">H</span>
@@ -152,7 +152,7 @@
           
           <div class="col">
             <div class="wave-group">
-              <input required="" type="text" class="input">
+              <input required="" type="text" class="input" id="txtserch">
               <span class="bar"></span>
               <label class="label">
                 <span class="label-char" style="--index: 0">W</span>
@@ -169,13 +169,12 @@
           </div>
         </div>
 
-
         <!-- Conditions input desplay  -->
         <div class="row mt-3">
          
           <div class="col">
             <div class="wave-group">
-              <input required="" type="text" class="input">
+              <input required="" type="text" class="input" id="txtserch">
               <span class="bar"></span>
               <label class="label">
                 <span class="label-char" style="--index: 0">C</span>
@@ -198,7 +197,7 @@
           
           <div class="col">
             <div class="wave-group">
-              <input required="" type="text" class="input">
+              <input required="" type="text" class="input" id="txtserch">
               <span class="bar"></span>
               <label class="label">
                 <span class="label-char" style="--index: 0">R</span>
@@ -217,7 +216,7 @@
  
           <div class="col">
             <div class="wave-group">
-              <input required="" type="text" class="input">
+              <input required="" type="text" class="input" id="txtserch">
               <span class="bar"></span>
               <label class="label">
                 <span class="label-char" style="--index: 0">C</span>
@@ -237,7 +236,7 @@
           
           <div class="col">
             <div class="wave-group">
-              <input required="" type="text" class="input">
+              <input required="" type="text" class="input" id="txtserch">
               <span class="bar"></span>
               <label class="label">
                 <span class="label-char" style="--index: 0">L</span>
