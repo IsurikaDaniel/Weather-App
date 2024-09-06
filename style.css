@@ -146,13 +146,13 @@ h2 {
   width: 100%;
 }
 
-.time-container {
+.clock-container {
   margin-top: 20px;
   text-align: center;
   width: 100%;
 }
 
-.time {
+.clock {
   font-size: 50px;
   color: white;
 }
