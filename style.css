@@ -206,11 +206,11 @@ h2 {
     padding: 10px;
   }
 
-  .current-weather h1 {
+  .current-weather .temperature temp_c {
     font-size: 30px;
   }
 
-  .current-weather p {
+  .current-weather .description url {
     font-size: 14px;
   }
 

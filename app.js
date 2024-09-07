@@ -1,3 +1,5 @@
+
+
 const WEEK = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
 function updateTime() {
@@ -21,3 +23,7 @@ setInterval(updateTime, 1000);
 function zeroPadding(num, digit) {
     return String(num).padStart(digit, "0");
 }
+
+
+
+
