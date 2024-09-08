@@ -34,7 +34,7 @@ h2 {
   align-items: center;
 }
 
-.search-header__input {
+#location-input {
   font-family: inherit;
   font-size: 16px;
   background-color: #0a0a0a;
@@ -50,7 +50,7 @@ h2 {
   margin-top: 10px;
 }
 
-.search-header__button {
+#search-button {
   position: absolute;
   right: 10px;
   background-color: transparent;
@@ -58,8 +58,8 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #cec6c6;
 }
-
 .search-header__button:hover {
   cursor: pointer;
 }
@@ -206,11 +206,11 @@ h2 {
     padding: 10px;
   }
 
-  .current-weather .temperature temp_c {
+  .current-weather h1 {
     font-size: 30px;
   }
 
-  .current-weather .description url {
+  .current-weather p {
     font-size: 14px;
   }
 
@@ -277,7 +277,7 @@ h2 {
 
 
 /* Input desplay */
-.wave-group {
+/* .wave-group {
   position: relative;
 }
 
@@ -348,4 +348,4 @@ h2 {
 .wave-group .input:focus~.bar:before,
 .wave-group .input:focus~.bar:after {
   width: 50%;
-}
+} */
