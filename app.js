@@ -1,4 +1,6 @@
 
+//------------------------------current time & date------------------------------------
+ 
 const WEEK = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
 function updateTime() {
